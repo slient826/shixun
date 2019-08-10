@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+
+        #box {
+            width: 100%;
+        }
+
+        #operating {
+            width: 100%;
+            height: 200px;
+            background-color: #2E9EDA;
+        }
+
+        #title {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 20px;
+            text-align: center;
+            font-family: "微软雅黑";
+            font-size: 40px;
+            color: #fff;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #input {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            height: 35px;
+        }
+
+        #box #operating #input input {
+            height: 35px;
+            width: 800px;
+            line-height: 35px;
+            font-family: "微软雅黑";
+            font-size: 18px;
+            border-radius: 5px;
+            padding-left: 1em;
+        }
+
+        #addTaskButton {
+            margin-left: 10px;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            border: 0px;
+            border-radius: 10px;
+            background-color: rgb(26, 196, 125);
+            font-size: 15px;
+            font-family: "微软雅黑";
+            cursor: pointer;
+        }
+
+        #addTaskButton:hover {
+            background-color: rgb(80, 209, 155);
+        }
+
+        #content {
+            width: 100%;
+            background-color: #EEEEEE;
+        }
+
+        #taskList {
+            font-size: 20px;
+            font-family: "微软雅黑";
+            padding-left: 2em;
+            line-height: 40px;
+        }
+
+        .deleteButton {
+            display: inline-block;
+            position: absolute;
+            margin-top: 10px;
+            right: 1%;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            line-height: 17px;
+            text-align: center;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            background-color: rgb(231, 92, 92);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .deleteButton:hover {
+            background-color: rgb(226, 133, 133);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="operating">
+            <div id="title">我的任务编辑器</div>
+            <div id="input">
+                <input id="inputText" type="text" placeholder="请输入任务名称">
+                <button id="addTaskButton">添加任务</button>
+            </div>
+        </div>
+        <div id="content">
+            <ul id="taskList">
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function deleteTask() {
+            var parent = this.parentElement;
+            taskList.removeChild(parent);
+        }
+        function addTask() {
+            var taskText = inputText.value;
+            var taskNode = document.createElement("li");
+            var taskName = document.createTextNode(taskText);
+            taskNode.appendChild(taskName);
+
+            var taskDeleteButton = document.createElement("span");
+            taskDeleteButton.className = "deleteButton";
+            taskDeleteButton.onclick = deleteTask;
+            var deleteText = document.createTextNode("x");
+            taskDeleteButton.appendChild(deleteText);
+            taskNode.appendChild(taskDeleteButton);
+
+            if (taskText.trim() === "") {
+                inputText.value = "";
+                inputText.focus();
+                alert('任务名称不能为空!');
+            } else {
+                taskList.appendChild(taskNode);
+                inputText.value = "";
+            }
+        }
+        var oAddTaskButton = document.getElementById("addTaskButton");
+        oAddTaskButton.onclick = addTask;
+
+    </script>
+</body>
+
+</html>

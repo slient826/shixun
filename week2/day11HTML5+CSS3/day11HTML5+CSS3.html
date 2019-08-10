@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: "宋体"
+        }
+
+        .box {
+            width: 1024px;
+            margin: 0 auto;
+
+        }
+
+        .top {
+            position: relative;
+            width: 1024px;
+            margin: 0 auto;
+            height: 150px;
+            border-bottom: 1px solid rgb(143, 143, 143);
+        }
+
+        .title {
+            position: absolute;
+            width: 400px;
+            height: 100px;
+            top: 20px;
+            left: 30px;
+        }
+
+        .title-text {
+            margin-left: 100px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 5px 5px 10px #5a5a5a
+        }
+
+        .title-img {
+            float: left;
+            width: 90px;
+            height: 90px;
+            margin-top: 5px;
+            margin-right: 10px;
+            transform: rotate(0deg);
+            transition: transform 10s linear 0s;
+        }
+
+        .title-img img {
+            width: 90px;
+            height: 90px;
+        }
+
+        .title-img:hover {
+            transform: rotate(7200deg);
+        }
+
+        .top nav {
+            position: absolute;
+            height: 150px;
+            line-height: 150px;
+            right: 0px;
+        }
+
+        .top nav ul li {
+            float: left;
+            letter-spacing: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        section {
+            position: relative;
+            height: 960px;
+        }
+
+        .left {
+            position: absolute;
+            padding: 40px;
+            width: 700px;
+            padding-bottom: 10px;
+            border-right: 1px solid rgb(219, 219, 219);
+        }
+
+        .left h3 {
+            line-height: 30px;
+        }
+
+        .left h4 {
+            margin-top: 30px;
+            line-height: 20px;
+        }
+
+        .left h4 li {
+            margin-left: 2em;
+            line-height: 30px;
+        }
+
+        .left h2 {
+            line-height: 50px;
+        }
+
+        .left h1 {
+            margin-top: 20px;
+            line-height: 70px;
+        }
+
+        .comment {
+            margin-top: 20px;
+
+        }
+
+        .comment li {
+            margin-top: 20px;
+            padding: 20px;
+            height: 50px;
+            background-color: rgb(235, 235, 235);
+            border-radius: 10px;
+        }
+
+        .comment .comment-face {
+            float: left;
+            width: 50px;
+            height: 50px;
+        }
+
+        .comment .comment-text {
+            height: 100px;
+            line-height: 25px;
+            margin-left: 60px;
+        }
+
+        .comment .comment-face img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .comment h6 {
+            line-height: 20px;
+        }
+
+        .right {
+            position: absolute;
+            right: 100px;
+        }
+
+        .right h2 {
+            line-height: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .right ul li {
+            line-height: 30px;
+        }
+
+        .bottom {
+            position: relative;
+            height: 120px;
+            background-color: rgb(131, 131, 131);
+            color: #fff;
+            text-align: left;
+            padding-top: 40px;
+            padding-left: 25px;
+            line-height: 40px;
+            padding-bottom: 10px;
+        }
+
+        .left-bottom {
+            position: absolute;
+            width: 350px;
+        }
+
+        .right-bottom {
+            position: absolute;
+            border-left: 1px solid rgb(247, 247, 247);
+            padding-left: 20px;
+            right: 350px;
+        }
+
+        footer {
+            margin-top: 30px;
+            border-top: 1px solid rgb(177, 177, 177);
+            text-align: right;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <div class="title">
+                <div class="title-img">
+                    <img src="./logo.png" alt="">
+                </div>
+                <div class="title-text">
+                    <h1>实训在线</h1>
+                    <h3>shixun online IT教育在线平台</h3>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">课程</a></li>
+                    <li><a href="">资料</a></li>
+                    <li><a href="">我的</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <div class="left">
+                <div class="content"></div>
+                <h2>HTML5简介</h2>
+                <h3>2018-08-08 by shixun</h3>
+                <h4>HTML5 是 HTML4 的一个升级版本，简称
+                    H5，标准通用标记语言下的一个应用HTML标准自1999年12月发布的HTML4.01后，后继的HTML5和其它标准被束之高阁，为了推动Web标准化运动的发展，一些公司联合起来，成立了一个叫做 Web
+                    Hypertext Application Technology Working Group （Web超文本应用技术工作组 -WHATWG） 的组织。WHATWG 致力于 Web
+                    表单和应用程序，而W3C（World Wide Web Consortium，万维网联盟） 专注于XHTML2.0。在 2006 年，双方决定进行合作，来创建一个新版本的 HTML。</h4>
+                <h1>HTML5新增特性</h1>
+                <h4>
+                    <li>新的语义标签 header/footer/article/section...</li>
+                    <li>新增表单控件（标签）data、time、email、url、number…</li>
+                    <li>新增视频/音频标签video、audio</li>
+                    <li>新增画布标签（canvas）</li>
+                    <li>更好支持支持本地离线数据存储</li>
+                </h4>
+                <div class="comment">
+                    <h3>3 评论</h3>
+                    <ul>
+                        <li>
+                            <div class="comment-face">
+                                <img src="./logo.png" alt="">
+                            </div>
+                            <div class="comment-text">
+                                <h5>
+                                    <span class="name">张宇宙</span>
+                                    <span class="date">2018-8-8</span>
+                                    <span class="time">19:00</span>
+                                </h5>
+                                <h6>太棒啦！</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="comment-face">
+                                <img src="./logo.png" alt="">
+                            </div>
+                            <div class="comment-text">
+                                <h5>
+                                    <span class="name">张宇宙</span>
+                                    <span class="date">2018-8-8</span>
+                                    <span class="time">19:00</span>
+                                </h5>
+                                <h6>太棒啦！</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="comment-face">
+                                <img src="./logo.png" alt="">
+                            </div>
+                            <div class="comment-text">
+                                <h5>
+                                    <span class="name">张宇宙</span>
+                                    <span class="date">2018-8-8</span>
+                                    <span class="time">19:00</span>
+                                </h5>
+                                <h6>太棒啦！</h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <h2>分类</h2>
+                <ul>
+                    <li><a href="">&gt;HTML</a></li>
+                    <li><a href="">&gt;CSS</a></li>
+                    <li><a href="">&gt;JavaScript</a></li>
+                    <li><a href="">&gt;jQuery</a></li>
+                    <li><a href="">&gt;Bootstrap</a></li>
+                </ul>
+            </div>
+
+        </section>
+        <div class="bottom">
+            <div class="left-bottom">
+                <h2>友情链接</h2>
+                <h4>
+                    <span>链接1</span>
+                    <span>链接2</span>
+                    <span>链接3</span>
+                </h4>
+            </div>
+            <div class="right-bottom">
+                <h2>联系我们</h2>
+                <h4>武汉市，光谷金融港
+                </h4>
+            </div>
+        </div>
+        <footer>Copyright&copy;&emsp;2014-2018&emsp;明博科技版权所有</footer>
+    </div>
+</body>
+
+</html>

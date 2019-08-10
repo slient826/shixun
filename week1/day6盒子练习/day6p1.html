@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: "simsun";
+            font-size: 15px;
+        }
+
+        .box {
+            margin: 10% 40%;
+            width: 310px;
+            height: 190px;
+        }
+
+        .columns {
+            position: relative;
+            width: 310px;
+            height: 30px;
+            line-height: 30px;
+            border-top: 2px solid #206F96;
+            text-align: center;
+            margin-bottom: 15px;
+            background-color: #F6F6F6;
+        }
+
+        .columns-news {
+            position: absolute;
+            width: 102px;
+            height: 30px;
+            border-left: 1px solid #CFCFCF;
+            border-bottom: 1px solid #CFCFCF;
+        }
+
+        .columns-news:hover {
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            border-bottom: 0px;
+        }
+
+        .columns-pic:hover {
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            border-bottom: 0px;
+        }
+
+        .columns-military:hover {
+            font-weight: bold;
+            background-color: rgb(255, 255, 255);
+            border-bottom: 0px;
+        }
+
+        .columns-pic {
+            position: absolute;
+            left: 102px;
+            width: 102px;
+            height: 30px;
+            border: 1px solid #CFCFCF;
+            border-top: 0px;
+        }
+
+        .columns-military {
+            position: absolute;
+            right: 0px;
+            width: 102px;
+            height: 30px;
+            border-right: 1px solid #CFCFCF;
+            border-bottom: 1px solid #CFCFCF;
+        }
+
+        .contentbox {
+            position: relative;
+            width: 310px;
+            height: 160px;
+            font-size: 15px;
+            margin-left: 8px;
+        }
+
+        .contentbox ul li {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .headline {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="columns">
+            <div class="columns-news">新闻</div>
+            <div class="columns-pic">图片</div>
+            <div class="columns-military">军事&nbsp;航空</div>
+        </div>
+        <div class="contentbox">
+            <ul>
+                <li class="headline">习近平离京访问捷克并出席核安全峰会</li>
+                <li>习近平在捷克发文&nbsp;热议&nbsp;出访专题&nbsp;这三年</li>
+                <li>李克强:亚洲国家较含蓄&nbsp;更需开放交流在博鳌</li>
+                <li>张德江会客&nbsp;江泽民为《世界名曲45首》作序</li>
+                <li>酒店枕头下现近万现金&nbsp;房客怒投诉:没换枕套</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    list-style: none;
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.searchbox {
+    position: relative;
+    border-left: 2px solid #C9C4C5;
+    border-right: 2px solid #C9C4C5;
+    padding-left: 20px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+}
+
+.searchbox .fa-search {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+}
+
+.searchbox h3 {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.container.first-line {
+    padding-top: 50px;
+}
+
+.container.first-line .row.first {
+    border: 1px solid #C9C4C5;
+    border-top: 0px;
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
+.container.first-line .quote-text {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.container.first-line .phone {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.blockfoot {
+    margin-top: 15px;
+}
+
+.product .title span {
+    font-size: 30px;
+    background-image: url("../img/bg.jpg");
+    width: 160px;
+    display: inline-block;
+}
+
+.product {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product h2 {
+    line-height: 33px;
+    border-bottom: 2px solid black;
+    height: 24px;
+    margin-bottom: 50px;
+}
+
+.product.first-line .row.first {
+    text-align: center;
+}
+
+.product.first-line .img-thumbnail img {
+    width: 140px;
+}
+
+.product .img-thumbnail div {
+    position: absolute;
+    bottom: 6px;
+    left: 25px;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: #fff;
+}
+
+.new-list {
+    margin-top: 50px;
+}
+
+.new-list .row.content {
+    margin-left: 10px;
+}
+
+.new-list .col-sm-5 .row {
+    margin-top: 30px;
+}
+
+.new-list .col-sm-5 img {
+    width: 190px;
+    height: 195px;
+}
+
+.product.order .row {
+    text-align: left;
+}
+
+.col-sm-4.order {
+    text-align: center;
+}
+
+.product.order .card.video {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product.order .card-body.video {
+    padding: 0px;
+}
+
+#video {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    height: 190px;
+}
+
+.product.order .row .media {
+    margin-top: 30px;
+}
+
+.footer {
+    background-image: url("../img/1.jpg");
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.footer .overlay {
+    background-color: rgba(0, 0, 0, 0.233);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    ;
+}
+
+.footerbox {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 30px;
+    padding-top: 20px;
+    height: 350px;
+    padding-left: 20px;
+}

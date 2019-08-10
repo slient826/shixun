@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.box {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    font-size: 14px;
+    color: #818496;
+    background-color: #191D3A;
+}
+
+.navbar-content {
+    margin: 0 auto;
+    height: 58px;
+    width: 1024px;
+    position: relative;
+}
+
+.navbar-content .logo {
+    position: absolute;
+    top: 10px;
+    width: 268px;
+    height: 58px;
+    line-height: 58px;
+    background-image: url("./img/brand.png");
+    background-size: 160px 36px;
+    background-repeat: no-repeat;
+}
+
+.navbar .navbar-content .navbar-right {
+    position: absolute;
+    margin-left: 210px;
+}
+
+.navbar .navbar-content .navbar-right ul li {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #252947;
+    width: 85px;
+}
+
+.nav-title:first-child {
+    border-left: 1px solid #252947;
+}
+
+.navbar-right .select {
+    background-color: #252947;
+    font-weight: bold;
+    color: #E2E4ED;
+}
+
+.nav-title:hover {
+    font-weight: bold;
+    color: #E2E4ED;
+    cursor: pointer;
+}
+
+.join {
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #38B774;
+    border-radius: 5px;
+    border: 0px;
+    color: #E2E4ED;
+}
+
+.join:hover {
+    color: #E2E4ED;
+    background-color: rgb(47, 161, 101);
+    cursor: pointer;
+}
+
+#change-lan {
+    margin-left: 110px;
+    border: 0px;
+}
+
+#chinese {
+    margin-right: 15px;
+    color: #38B774;
+}
+
+.top-img {
+    background-position: center;
+    height: 254px;
+    background-image: url("./img/gamebanner.jpg");
+}
+
+.content {
+    position: relative;
+}
+
+.content .titlebox {
+    position: relative;
+    margin: 0 auto;
+    height: 68px;
+    width: 1024px;
+    line-height: 68px;
+    border-bottom: 1px solid #C7D6E5;
+    font-family: "微软雅黑"
+}
+
+.left-title {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444866;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 30px;
+}
+
+.title-left-icon {
+    display: inline-block;
+    width: 23px;
+    height: 16px;
+    margin-right: 7px;
+    background: url("./img/location.png") no-repeat 0 -100px;
+}
+
+.right-title {
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+    color: #444866;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 34px;
+    text-align: center;
+}
+
+.title-right-icon {
+    display: inline-block;
+    margin-right: 14px;
+    width: 15px;
+    height: 13px;
+    line-height: 20px;
+    background: url("./img/home.png");
+}
+
+.title-right-triangle {
+    display: inline-block;
+    width: 0px;
+    height: 0;
+    margin-right: 11px;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #AABACB;
+    border-bottom: 5px solid transparent;
+}
+
+.middlebox {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 1200px;
+    overflow: hidden;
+}
+
+.platform-list {
+    position: absolute;
+    width: 195px;
+    height: 400px;
+    margin-top: 40px;
+}
+
+.platform-list ul li {
+    height: 80px;
+    line-height: 80px;
+    font-size: 15px;
+    border-bottom: 1px solid #cad6e1;
+}
+
+.icon {
+    float: left;
+    width: 35px;
+    height: 38px;
+    margin-top: 20px;
+}
+
+.apple {
+    background: url("./img/pad.png") no-repeat 0px 0px;
+}
+
+.android {
+    background: url("./img/pad.png") no-repeat 0px -97px;
+}
+
+.ipad {
+    background: url("./img/pad.png") no-repeat 0px -198px;
+}
+
+.pc {
+    background: url("./img/pad.png") no-repeat 0px -300px;
+}
+
+.tv {
+    background: url("./img/pad.png") no-repeat 0px -606px;
+}
+
+.arrow {
+    float: right;
+    width: 0px;
+    height: 0;
+    margin-top: 35px;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #38B774;
+    border-bottom: 5px solid transparent;
+}
+
+.green {
+    display: inline-block;
+    width: 0px;
+    height: 0;
+    margin-left: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #38B774;
+    margin-top: 25px;
+}
+
+.platform-list .text {
+    margin-left: 22px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.game {
+    position: absolute;
+    width: 780px;
+    right: 0px;
+}
+
+.game-list {
+    float: left;
+    width: 360px;
+    height: 330px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    margin-top: 42px;
+    border: 1px solid #CAD6E1;
+    margin-left: 45px;
+}
+
+.game-list:nth-child(odd) {
+    margin-left: 0px;
+}
+
+.game-title {
+    width: 330px;
+    height: 58px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-title .game-zh {
+    display: inline-block;
+    color: #444866;
+    font-size: 15px;
+    height: 58px;
+    line-height: 58px;
+}
+
+.game-title .game-en {
+    display: inline-block;
+    color: #38B774;
+    font-size: 12px;
+    height: 58px;
+    line-height: 58px;
+}
+
+.game-img {
+    margin: 0 auto;
+    width: 330px;
+    height: 196px;
+    background-image: url("./img/gamepic15.jpg");
+}
+
+.game-down {
+    width: 330px;
+    margin: 0 auto;
+    height: 37px;
+    line-height: 37px;
+    margin-top: 20px;
+}
+
+.down-list {
+    float: left;
+
+}
+
+.apple-store {
+    width: 165px;
+    border-right: 1px solid #CAD6E1;
+}
+
+.down-icon {
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+.qrCode {
+    cursor: pointer;
+}
+
+.qrCode:hover {
+    color: #38B774;
+}
+
+.qr-icon {
+    position: relative;
+    background: url("./img/four_landlords116.png") no-repeat 0px 0px;
+    background-size: 30px 30px;
+    margin-top: 5px;
+}
+
+.game-down .game-text {
+    padding-left: 5px;
+    font-size: 15px;
+    height: 37px;
+    line-height: 37px;
+}
+
+.bottom {
+    position: relative;
+    padding-left: 20%;
+    padding-top: 40px;
+    font-size: 12px;
+    height: 192px;
+    line-height: 40px;
+    background-color: #191D3A;
+    color: #6C6E7E;
+}
+
+.bottom img {
+    width: 37px;
+    height: 49px;
+    line-height: 49px;
+    vertical-align: middle;
+}
+
+.qrcode-bg {
+    display: none;
+    position: absolute;
+    z-index: 500;
+    width: 146px;
+    height: 156px;
+    left: -60px;
+    top: -155px;
+    background-image: url("./img/ewmbg.png");
+}
+
+.qrcodeBig {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 130px;
+    height: 130px;
+    left: -52px;
+    top: -150px;
+    background-image: url("./img/four_landlords116.png");
+    background-size: 130px 130px;
+}

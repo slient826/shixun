@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: url("bg.jpg");
+    }
+
+    input,
+    button {
+        border: none;
+        outline: none;
+    }
+
+    .xinput {
+        width: 250px;
+        border: 1px solid #ccc;
+        padding: 7px 0;
+        background: #F4F4F7;
+        border-radius: 3px;
+        padding-left: 5px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+    }
+
+    .xinput:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+    }
+
+    .ant-btn {
+        line-height: 1.499;
+        position: relative;
+        display: inline-block;
+        font-weight: 400;
+        white-space: nowrap;
+        text-align: center;
+        background-image: none;
+        border: 1px solid transparent;
+        -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+        cursor: pointer;
+        -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        height: 32px;
+        padding: 0 15px;
+        font-size: 14px;
+        border-radius: 4px;
+        color: rgba(0, 0, 0, 0.65);
+        background-color: #fff;
+        border-color: #d9d9d9;
+    }
+
+    .ant-btn:active {
+        color: #fff;
+        background-color: #708496;
+        border-color: #7a7c7e;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+        -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    }
+
+    .ant-btn-red {
+        color: #fff;
+        background-color: #FF5A44;
+        border-color: #FF5A44;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+        -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    }
+
+    .login {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+        width: 800px;
+        margin: 0 auto;
+        padding-top: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(223, 220, 220);
+        border-radius: 20px;
+        display: none;
+    }
+
+    .registerbox {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(223, 220, 220);
+        border-radius: 20px;
+    }
+
+    .tipsBox {
+        width: 450px;
+        text-align: left;
+        margin: auto;
+    }
+
+    .loginBox {
+        width: 400px;
+        text-align: left;
+        margin: auto;
+    }
+
+    .tips {
+        margin: 18px;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .introducing {
+        margin-left: 90px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .confirm {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+
+
+<body>
+    <form class=" login">
+        &nbsp;用户登录
+        <hr>
+        <div class="loginBox">
+            <div class="tips">用户名称：
+                <input class="xinput" type="text" name="username">
+            </div>
+            <div class="tips">密&emsp;&emsp;码：
+                <input class="xinput" type="password" name="password">
+            </div>
+        </div>
+        <hr>
+        <div class="confirm">
+            <button class="ant-btn" type="button">登录</button>
+            <button class="ant-btn ant-btn-red" type="reset" onclick="closeLogin()">取消</button>
+        </div>
+    </form>
+
+    <form class=" registerbox">
+        <img src="logo.png" alt="图片不存在" title="孙爷爷在此" width="50px" height="50px">
+        &nbsp;用户注册
+        <hr>
+        <div class="tipsBox">
+            <div class="tips">用户名称：
+                <input class="xinput" type="text" name="username">
+            </div>
+            <div class="tips">密&emsp;&emsp;码：
+                <input class="xinput" type="password" name="password">
+            </div>
+            <div class="tips">确认密码：
+                <input class="xinput" type="password" name="password">
+            </div>
+            <div class="tips">性&emsp;&emsp;别：
+                <input type="radio" name="sex">男
+                <input type="radio" name="sex">女
+
+            </div>
+            <div class="tips">职&emsp;&emsp;业：
+                <select name="worker">
+                    <option value="programmer">程序员</option>
+                    <option value="teacher">老师</option>
+                    <option value="student">学生</option>
+                </select>
+            </div>
+            <div class="tips">爱&emsp;&emsp;好：
+                <input type="checkbox" name="singing">唱歌
+                <input type="checkbox" name="dancing">跳舞
+                <input type="checkbox" name="rap">说唱
+                <input type="checkbox" name="basketball">篮球
+            </div>
+            <div class="tips">自我介绍：
+                <div class="introducing"><textarea name="introducing" cols="30" rows="10"></textarea></div>
+            </div>
+        </div>
+        <hr>
+        <div class="confirm">
+            <button class="ant-btn" type="button">注册</button>
+            <button class="ant-btn ant-btn-red" type="reset">重置</button>
+            <a href="javascript:showLogin()">已有账号</a>
+        </div>
+    </form>
+
+</body>
+<script>
+    function showLogin() {
+        var login = document.getElementsByClassName("login")[0];
+        var regist = document.getElementsByClassName("registerbox")[0];
+        login.style.display = "block";
+        regist.style.display = "none";
+    }
+
+    function closeLogin() {
+        var login = document.getElementsByClassName("login")[0];
+        var regist = document.getElementsByClassName("registerbox")[0];
+        regist.style.display = "block";
+        login.style.display = "none";
+    }
+</script>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车 | iFashion 时尚 | 优雅</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./plugins/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/cart.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <nav>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li>品牌</li>
+                <li>设计师</li>
+                <li>联系我们</li>
+            </ul>
+        </nav>
+        <div class="tablebox">
+            <table border="0" cellpadding="2" cellspacing="0">
+                <tr class="table-top">
+                    <td><input type="checkbox">全选</td>
+                    <td>商品</td>
+                    <td>单价（￥）</td>
+                    <td>数量</td>
+                    <td>小计（￥）</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-bottom">
+            <span id="delete">删除所有商品</span>
+            <span id="selected">
+                <span>已选商品&nbsp;<span class="selected-num">0</span>&nbsp;款</span>
+            </span>
+            <span id="total">
+                <span>合计：￥<span class="total-num">0.00</span></span>
+            </span>
+            <span id="settlement">结算</span>
+        </div>
+    </div>
+</body>
+
+</html>

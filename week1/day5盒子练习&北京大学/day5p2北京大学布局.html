@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            padding: 0px;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .titlebox {
+            position: relative;
+            width: 795px;
+            height: 90px;
+        }
+
+        .titlebox .title-left {
+            position: absolute;
+            width: 250px;
+            height: 90px;
+            background-color: rgb(180, 63, 63);
+        }
+
+        .titlebox .title-right {
+            position: absolute;
+            left: 260px;
+            width: 540px;
+            height: 90px;
+            background-color: rgb(180, 63, 63);
+        }
+
+        .subbox {
+            position: relative;
+            width: 800px;
+            height: 360px;
+            margin-top: 10px;
+            background-color: rgb(88, 88, 139);
+        }
+
+        .subbox .subbox-left {
+            position: absolute;
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 250px;
+            height: 350px;
+            background-color: rgb(102, 218, 102);
+        }
+
+        .subbox .subbox-right .left-contentbox {
+            position: absolute;
+            left: 260px;
+            width: 370px;
+            height: 330px;
+            background-color: rgb(51, 214, 51);
+        }
+
+        .titlebox .title-right .language {
+            position: relative;
+            margin-top: 20px;
+            margin-left: 490px;
+            width: 40px;
+            height: 10px;
+            background-color: #fff;
+        }
+
+        .titlebox .title-right .navbar {
+            position: relative;
+            margin-top: 10px;
+            width: 540px;
+            height: 25px;
+            background-color: #002A5F;
+        }
+
+        .subbox .subbox-right .right-contentbox {
+            position: absolute;
+            left: 640px;
+            width: 160px;
+            height: 330px;
+            background-color: rgb(20, 166, 202);
+        }
+
+        .subbox-right .left-first-content {
+            position: relative;
+            margin-left: 5px;
+            width: 350px;
+            height: 200px;
+            background-color: #798FAA;
+        }
+
+        .subbox-right .left-second-content {
+            position: relative;
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 350px;
+            height: 90px;
+            background-color: rgb(108, 129, 155);
+        }
+
+        .subbox-right .left-third-content {
+            position: relative;
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 350px;
+            height: 30px;
+            background-color: rgb(108, 129, 155);
+        }
+
+        .subbox-right .right-first-content {
+            position: relative;
+            width: 160px;
+            height: 230px;
+            background-color: rgb(108, 129, 155);
+        }
+
+        .subbox-right .right-second-content {
+            position: relative;
+            margin-top: 5px;
+            width: 160px;
+            height: 80px;
+            background-color: rgb(108, 129, 155);
+        }
+
+        .subbox .bottom-nav {
+            position: relative;
+            left: 260px;
+            top: 335px;
+            width: 535px;
+            height: 25px;
+            background-color: rgb(20, 166, 202);
+        }
+
+        .bottom {
+            position: relative;
+            margin-top: 5px;
+            width: 800px;
+            height: 20px;
+            background-color: #002B5E;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="titlebox">
+            <div class="title-left"></div>
+            <div class="title-right">
+                <div class="language"></div>
+                <div class="navbar"></div>
+            </div>
+        </div>
+
+        <div class="subbox">
+            <div class="subbox-left"></div>
+            <div class="subbox-right">
+                <div class="left-contentbox">
+                    <div class="left-first-content"></div>
+                    <div class="left-second-content"></div>
+                    <div class="left-third-content"></div>
+                </div>
+                <div class="right-contentbox">
+                    <div class="right-first-content"></div>
+                    <div class="right-second-content"></div>
+                </div>
+                <div class="bottom-nav"></div>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</body>
+
+</html>

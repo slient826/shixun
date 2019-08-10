@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="./day11JsRegExp.js"></script>
+</head>
+
+<body>
+    <div>检测是否是数字，包括整数，小数
+        <input id="q1Input" type="text">
+        <button id="q1Button">检测</button>
+        <div id="q1Output"></div>
+    </div>
+    <div>检测是否是本地电话，如(+86)027-12345678
+        <input id="q2Input" type="text">
+        <button id="q2Button">检测</button>
+        <div id="q2Output"></div>
+    </div>
+    <div>检测是否是2到4位英文字母
+        <input id="q3Input" type="text">
+        <button id="q3Button">检测</button>
+        <div id="q3Output"></div>
+    </div>
+    <div>验证用户输入的邮箱地址要满足abc_12@cc.cc
+        <input id="q4Input" type="text">
+        <button id="q4Button">检测</button>
+        <div id="q4Output"></div>
+    </div>
+    <div>验证用户输入的 IP 地址要满足 255.255.255.255
+        <input id="q5Input" type="text">
+        <button id="q5Button">检测</button>
+        <div id="q5Output"></div>
+    </div>
+    <div>验证用户输入的密码要满足一下规定：1.不能以数字开头；2.不能包含除_以外的特殊字符；3.长度不能小于8并且不能大于15
+        <input id="q6Input" type="text">
+        <button id="q6Button">检测</button>
+        <div id="q6Output"></div>
+    </div>
+    <script>
+        q1Button.onclick = q1;
+        q2Button.onclick = q2;
+        q3Button.onclick = q3;
+        q4Button.onclick = q4;
+        q5Button.onclick = q5;
+        q6Button.onclick = q6;
+    </script>
+</body>
+
+</html>

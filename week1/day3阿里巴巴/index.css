@@ -1,0 +1,30 @@
+.agree button {
+    background-image: url(./img/agree.png);
+    width: 186px;
+    height: 29px;
+}
+
+.agree {
+    padding-top: 10px;
+    width: 68%;
+    margin: 0 auto;
+}
+
+.box {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tipstable {
+    border-spacing: 10px 20px;
+}
+
+.item {
+    padding-left: 250px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.tips {
+    text-align: right;
+}
