@@ -1,0 +1,364 @@
+* {
+  list-style: none;
+}
+
+.mobilebox .mobilenav {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  background-color: #fff;
+  border-top: 1px solid #d3d3d3;
+  bottom: 0;
+  display: none;
+}
+
+.mobilebox .mobilenav ul {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.mobilebox .mobilenav ul li {
+  display: inline-block;
+  background-image: url("../img/nav2.png");
+  background-repeat: no-repeat;
+  background-size: 500px 250px;
+  height: 150px;
+  width: 130px;
+  line-height: 150px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.mobilebox .mobilenav ul .mobilenav1 {
+  background-position: -400px -125px;
+  width: 80px;
+}
+
+.mobilebox .mobilenav ul .mobilenav2 {
+  background-position: -250px 0;
+}
+
+.mobilebox .mobilenav ul .mobilenav3 {
+  background-position: -120px 0;
+}
+
+.mobilebox .mobilenav ul .mobilenav4 {
+  background-position: 0 0;
+}
+
+.bgbox {
+  position: relative;
+}
+
+.bgbox .career {
+  position: relative;
+  top: 750px;
+  width: 1050px;
+  height: 210px;
+  margin: 0 auto;
+}
+
+.bgbox .career ul {
+  padding: 0;
+}
+
+.bgbox .career .car {
+  cursor: pointer;
+  display: inline-block;
+  width: 165px;
+  height: 165px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.bgbox .career .car.first {
+  margin-left: 20px;
+}
+
+.bgbox .career .text {
+  text-align: center;
+  font-weight: bold;
+  color: #272676;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50px 50px;
+  margin: 0 auto;
+}
+
+.bgbox .career .t1::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 45px;
+  border: 6px solid transparent;
+  border-bottom-color: #00b7ee;
+  left: 95px;
+}
+
+.bgbox .career .t2::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 45px;
+  border: 6px solid transparent;
+  border-bottom-color: #ffc600;
+  left: 365px;
+}
+
+.bgbox .career .t3::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 45px;
+  border: 6px solid transparent;
+  border-bottom-color: #fe5f4b;
+  left: 635px;
+}
+
+.bgbox .career .t4::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 45px;
+  border: 6px solid transparent;
+  border-bottom-color: #ffc600;
+  left: 905px;
+}
+
+.bgbox .career .t1 {
+  background-color: #00b7ee;
+}
+
+.bgbox .career .t2 {
+  background-color: #ffc600;
+}
+
+.bgbox .career .t3 {
+  background-color: #fe5f4b;
+}
+
+.bgbox .career .t4 {
+  background-color: #ffc600;
+}
+
+.bgbox .career .img {
+  background-size: 165px 165px;
+  width: 165px;
+  height: 165px;
+  margin: 0 auto;
+}
+
+.bgbox .career .qiu1 {
+  background-image: url("../img/qiu1.png");
+}
+
+.bgbox .career .qiu2 {
+  background-image: url("../img/qiu2.png");
+}
+
+.bgbox .career .qiu3 {
+  background-image: url("../img/qiu3.png");
+}
+
+.bgbox .career .qiu4 {
+  background-image: url("../img/qiu4.png");
+}
+
+.bgbox .bg {
+  position: relative;
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 1240px;
+}
+
+.bgbox .sign {
+  position: relative;
+  background-image: url("../img/xt.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 750px;
+  height: 70px;
+  background-size: 200px 70px;
+  cursor: pointer;
+  -webkit-animation: scle 2s infinite ease;
+  animation: scle 2s infinite ease;
+}
+
+@-webkit-keyframes scle {
+  from {
+    width: 700px;
+    background-size: 160px 56px;
+    opacity: 0.1;
+  }
+
+  to {
+    width: 750px;
+    background-size: 200px 70px;
+    opacity: 1;
+  }
+}
+
+@keyframes scle {
+  from {
+    width: 700px;
+    background-size: 160px 56px;
+    opacity: 0.1;
+  }
+
+  to {
+    width: 750px;
+    background-size: 200px 70px;
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1030px;
+}
+
+.container .navbar-brand {
+  border: 0;
+  padding: 0;
+  background-image: url("../img/xz.png");
+  width: 240px;
+  height: 50px;
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.container nav {
+  width: 100%;
+  height: 80px;
+  padding: 0;
+}
+
+.container nav .navbar-nav {
+  width: 500px;
+  margin-right: 5px;
+}
+
+.container nav .navbar-nav a {
+  min-width: 95px;
+  height: 80px;
+  padding: 0 !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  line-height: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.container nav .navbar-nav a:hover {
+  background-color: #11b273;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.container .bg-light {
+  background-color: #fff !important;
+}
+
+footer {
+  width: 100%;
+  background-color: #383753;
+  height: 80px;
+  line-height: 80px;
+}
+
+footer div {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  color: #7a789b;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mobilenav {
+    display: block !important;
+  }
+
+  .container nav {
+    display: none;
+  }
+
+  .bgbox .bg {
+    position: relative;
+    background-image: url("../img/bg-mobile.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 1080px;
+    width: 100%;
+    margin: 0 auto;
+    height: 1080px;
+  }
+
+  .bgbox .career {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .bgbox .career .car {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .bgbox .career .img {
+    background-size: 120px 120px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .bgbox .career ::before {
+    display: none !important;
+  }
+
+  .bgbox .career .text {
+    width: 100px !important;
+  }
+
+  .sign {
+    background-position: center !important;
+    margin-top: 120px !important;
+    width: 100% !important;
+  }
+
+  @-webkit-keyframes scle {
+    from {
+      background-size: 160px 56px;
+      opacity: 0.1;
+    }
+
+    to {
+      background-size: 200px 70px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes scle {
+    from {
+      background-size: 160px 56px;
+      opacity: 0.1;
+    }
+
+    to {
+      background-size: 200px 70px;
+      opacity: 1;
+    }
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

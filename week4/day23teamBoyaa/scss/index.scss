@@ -1,0 +1,341 @@
+* {
+    list-style: none;
+}
+
+.mobilebox {
+    .mobilenav {
+        width: 100%;
+        height: 150px;
+        position: fixed;
+        background-color: #fff;
+        border-top: 1px solid #d3d3d3;
+        bottom: 0;
+        display: none;
+
+        ul {
+            width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                background-image: url("/img/nav2.png");
+                background-repeat: no-repeat;
+                background-size: 500px 250px;
+                height: 150px;
+                width: 130px;
+                line-height: 150px;
+                margin-right: 40px;
+                cursor: pointer;
+            }
+
+            .mobilenav1 {
+                background-position: -400px -125px;
+                width: 80px;
+            }
+
+            .mobilenav2 {
+                background-position: -250px 0;
+            }
+
+            .mobilenav3 {
+                background-position: -120px 0;
+            }
+
+            .mobilenav4 {
+                background-position: 0 0;
+            }
+        }
+    }
+}
+
+.bgbox {
+    position: relative;
+
+    .career {
+        position: relative;
+        top: 750px;
+        width: 1050px;
+        height: 210px;
+        margin: 0 auto;
+
+        ul {
+            padding: 0;
+        }
+
+        .car {
+            cursor: pointer;
+            display: inline-block;
+            width: 165px;
+            height: 165px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        .car.first {
+            margin-left: 20px;
+        }
+
+        .text {
+            text-align: center;
+            font-weight: bold;
+            color: #272676;
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50px 50px;
+            margin: 0 auto;
+        }
+
+        .t1::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 45px;
+            border: 6px solid transparent;
+            border-bottom-color: #00b7ee;
+            left: 95px;
+        }
+
+        .t2::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 45px;
+            border: 6px solid transparent;
+            border-bottom-color: #ffc600;
+            left: 365px;
+        }
+
+        .t3::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 45px;
+            border: 6px solid transparent;
+            border-bottom-color: #fe5f4b;
+            left: 635px;
+        }
+
+        .t4::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 45px;
+            border: 6px solid transparent;
+            border-bottom-color: #ffc600;
+            left: 905px;
+        }
+
+        .t1 {
+            background-color: #00b7ee;
+        }
+
+        .t2 {
+            background-color: #ffc600;
+        }
+
+        .t3 {
+            background-color: #fe5f4b;
+        }
+
+        .t4 {
+            background-color: #ffc600;
+        }
+
+        .img {
+            background-size: 165px 165px;
+            width: 165px;
+            height: 165px;
+            margin: 0 auto;
+        }
+
+        .qiu1 {
+            background-image: url("/img/qiu1.png");
+        }
+
+        .qiu2 {
+            background-image: url("/img/qiu2.png");
+        }
+
+        .qiu3 {
+            background-image: url("/img/qiu3.png");
+        }
+
+        .qiu4 {
+            background-image: url("/img/qiu4.png");
+        }
+    }
+
+    .bg {
+        position: relative;
+        background-image: url("/img/bg.jpg");
+        background-position: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 1240px;
+    }
+
+    .sign {
+        position: relative;
+        background-image: url("/img/xt.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 750px;
+        height: 70px;
+        background-size: 200px 70px;
+        cursor: pointer;
+        animation: scle 2s infinite ease;
+    }
+
+    @keyframes scle {
+        from {
+            width: 700px;
+            background-size: 160px 56px;
+            opacity: 0.1;
+        }
+
+        to {
+            width: 750px;
+            background-size: 200px 70px;
+            opacity: 1;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1030px;
+
+    .navbar-brand {
+        border: 0;
+        padding: 0;
+        background-image: url("/img/xz.png");
+        width: 240px;
+        height: 50px;
+        margin: 0;
+        margin-top: 7px;
+        margin-left: 7px;
+    }
+
+    nav {
+        width: 100%;
+        height: 80px;
+        padding: 0;
+
+        .navbar-nav {
+            width: 500px;
+            margin-right: 5px;
+
+            a {
+                min-width: 95px;
+                height: 80px;
+                padding: 0 !important;
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+                line-height: 80px;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            a:hover {
+                background-color: #11b273;
+                color: #fff !important;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .bg-light {
+        background-color: #fff !important;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #383753;
+    height: 80px;
+    line-height: 80px;
+
+    div {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #7a789b;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .mobilenav {
+        display: block !important;
+    }
+
+    .container {
+        nav {
+            display: none;
+        }
+    }
+
+    .bgbox {
+        .bg {
+            position: relative;
+            background-image: url("/img/bg-mobile.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 1080px;
+            width: 100%;
+            margin: 0 auto;
+            height: 1080px;
+        }
+
+        .career {
+            width: 100% !important;
+            text-align: center !important;
+
+            .car {
+                margin-left: 10px;
+                margin-right: 10px;
+                width: 120px !important;
+                height: 120px !important;
+            }
+
+            .img {
+                background-size: 120px 120px;
+                width: 120px;
+                height: 120px;
+                margin: 0 auto;
+            }
+
+            ::before {
+                display: none !important;
+            }
+
+            .text {
+                width: 100px !important;
+            }
+        }
+    }
+
+    .sign {
+        background-position: center !important;
+        margin-top: 120px !important;
+        width: 100% !important;
+    }
+
+    @keyframes scle {
+        from {
+            background-size: 160px 56px;
+            opacity: 0.1;
+        }
+
+        to {
+            background-size: 200px 70px;
+            opacity: 1;
+        }
+    }
+}
