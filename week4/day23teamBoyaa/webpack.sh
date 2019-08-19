@@ -1,8 +1,9 @@
 #!/bin/bash
 npm init --yes
 sed -i '7a,"webpack-d":"webpack --mode development",' package.json
-sed -i '8a"webpack-p": "webpack --mode production"' package.json
-sed -i '$i,"devDependencies": {"@babel/core": "^7.5.5","@babel/preset-env": "^7.5.5","autoprefixer": "^9.6.1","babel-loader": "^8.0.6","clean-webpack-plugin": "^3.0.0","css-loader": "^3.2.0","expose-loader": "^0.7.5","file-loader": "^4.2.0","html-webpack-plugin": "^3.2.0","html-withimg-loader": "^0.1.16","postcss-loader": "^3.0.0","style-loader": "^1.0.0","stylelint-config-standard": "^18.3.0","url-loader": "^2.1.0","webpack": "^4.39.1","webpack-cli": "^3.3.6"},"dependencies": {"jquery": "^3.4.1"},"babel": {"presets": ["@babel/preset-env"],"plugins": []}' package.json
+sed -i '8a"webpack-p":"webpack --mode production",' package.json
+sed -i '9a"debug":"node_modules/.bin/webpack-dev-server --mode development"' package.json
+sed -i '$i,"devDependencies": {"@babel/core": "^7.5.5","@babel/preset-env": "^7.5.5","autoprefixer": "^9.6.1","babel-loader": "^8.0.6","clean-webpack-plugin": "^3.0.0","css-loader": "^3.2.0","expose-loader": "^0.7.5","file-loader": "^4.2.0","html-webpack-plugin": "^3.2.0","html-withimg-loader": "^0.1.16","postcss-loader": "^3.0.0","style-loader": "^1.0.0","stylelint-config-standard": "^18.3.0","url-loader": "^2.1.0","webpack": "^4.39.1","webpack-cli": "^3.3.6","webpack-dev-server": "^3.8.0"},"dependencies": {"jquery": "^3.4.1"},"babel": {"presets": ["@babel/preset-env"],"plugins": []}' package.json
 
 printf "\n"
 printf "正在以本地模式安装必要插件，请稍候..."
@@ -58,6 +59,12 @@ module.exports = {
             template: './index.html'
         })
     ],
+    devServer: {
+        contentBase: './',
+        host: 'localhost',
+        port: 5500,
+        watchContentBase: true
+    },
     module: {
         rules: [{
                 test: /\.js$/,

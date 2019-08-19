@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body .carousel {
+  position: relative;
+  width: 1226px;
+  height: 645px;
+  margin: 0 auto;
+}
+
+body .carousel .first {
+  position: relative;
+  height: 460px;
+}
+
+body .carousel .first .img {
+  position: absolute;
+  width: 1226px;
+  height: 460px;
+  background-image: url("../img/carouselPic/1.jpg");
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
+}
+
+body .carousel .first .left {
+  position: absolute;
+  height: 460px;
+  width: 234px;
+  background-color: #5e5e5e73;
+}
+
+body .carousel .first .left ul li {
+  width: 204px;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 30px;
+  color: #fff;
+  font-size: 14px;
+}
+
+body .carousel .first .left ul li img {
+  vertical-align: middle;
+  position: absolute;
+  right: 20px;
+  padding-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+body .carousel .first .left ul .big-left.hover {
+  cursor: pointer;
+  background-color: #ff6700;
+}
+
+body .carousel .first .left ul li:nth-child(1) {
+  margin-top: 20px;
+}
+
+body .carousel .first .left-big {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  width: 992px;
+  height: 460px;
+  left: 234px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 30px 0 #747474;
+          box-shadow: 0 5px 30px 0 #747474;
+}
+
+body .carousel .first .left-big ul li {
+  float: left;
+  cursor: pointer;
+  height: 76px;
+  width: 225px;
+  line-height: 76px;
+  font-size: 14px;
+  color: #333;
+  padding-left: 20px;
+}
+
+body .carousel .first .left-big ul li img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+body .carousel .first .left-big ul li:hover {
+  cursor: pointer;
+  color: #ff6700;
+}
+
+body .carousel .first .left-big.big3,
+body .carousel .first .left-big.big5,
+body .carousel .first .left-big.big6,
+body .carousel .first .left-big.big7,
+body .carousel .first .left-big.big9 {
+  width: 532px;
+}
+
+body .carousel .first .current {
+  display: block;
+}
+
+body .carousel .first .btn-left {
+  position: absolute;
+  width: 41px;
+  height: 69px;
+  left: 234px;
+  top: 200px;
+  background-image: url("../img/carouselPic/icon_slides.png");
+  background-position: -85px 0;
+}
+
+body .carousel .first .btn-left:hover {
+  cursor: pointer;
+  background-position: 0 0;
+}
+
+body .carousel .first .btn-right {
+  position: absolute;
+  width: 41px;
+  height: 69px;
+  right: 0;
+  top: 200px;
+  background-image: url("../img/carouselPic/icon_slides.png");
+  background-position: -125px 0;
+}
+
+body .carousel .first .btn-right:hover {
+  cursor: pointer;
+  background-position: -43px 0;
+}
+
+body .carousel .first .btn-circle {
+  position: absolute;
+  width: 90px;
+  height: 10px;
+  bottom: 25px;
+  right: 27px;
+}
+
+body .carousel .first .btn-circle ul li {
+  float: left;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  background-color: black;
+  border: 2px solid #666;
+  border-radius: 50px;
+  opacity: 0.5;
+}
+
+body .carousel .first .btn-circle ul .choice.active {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+body .carousel .first .btn-circle ul li:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+body .carousel .second {
+  position: relative;
+  top: 14px;
+  height: 170px;
+}
+
+body .carousel .second .features {
+  position: absolute;
+  width: 235px;
+  height: 170px;
+  background-color: #5f5750;
+}
+
+body .carousel .second .features ul li {
+  float: left;
+  width: 76px;
+  height: 82px;
+  margin-top: 2px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.6;
+  -webkit-transition: 100ms linear;
+  transition: 100ms linear;
+}
+
+body .carousel .second .features ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+body .carousel .second .features ul li:first-child,
+body .carousel .second .features ul li:nth-child(4) {
+  width: 64px;
+  margin-left: 2px;
+  padding-left: 12px;
+}
+
+body .carousel .second .features ul li:nth-child(4),
+body .carousel .second .features ul li:nth-child(5),
+body .carousel .second .features ul li:nth-child(6) {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body .carousel .second .features ul li:hover {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+}
+
+body .carousel .second .subpic {
+  position: absolute;
+  height: 170px;
+  left: 250px;
+}
+
+body .carousel .second .subpic ul li {
+  float: left;
+  margin-right: 15px;
+  height: 170px;
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+}
+
+body .carousel .second .subpic ul li:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 20px 50px 1px #dadada;
+          box-shadow: 0 20px 50px 1px #dadada;
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
+}
+
+body .carousel .second .subpic ul li:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=carousel.css.map */
