@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>数据可视化
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="header-left-broken-line"></div>
+        </div>
+        <div class="header-title">数据可视化展示</div>
+        <div class="header-right">
+            <div class="header-right-broken-line"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <div class="weather">
+                <div class="box">
+                    <div class="title">天气预报</div>
+                    <div class="weather-top">
+                        <% for(i=0;i<weathers.weatherList.date.length;i++){%>
+                        <ul>
+                            <li class="date">
+                                <%= weathers.weatherList.date[i]%>
+                            </li>
+                            <li
+                                style="background: url('../images/<%= weathers.weatherList.weather[i]%>.png') center no-repeat">
+                            </li>
+                            <li class="weather">
+                                <%= weathers.weatherList.weather[i]%>
+                            </li>
+                            <li class="temperature">
+                                <%= weathers.weatherList.temperature[i]%>
+                            </li>
+                        </ul>
+                        <%}%>
+                    </div>
+                    <div id="weatherModel"></div>
+                </div>
+            </div>
+            <div class="movie">
+                <div class="box">
+                    <div class="title">电影票房</div>
+
+                    <div class="movie-top">
+                        <div class="sales-data">
+                            <h2>28.73 <span>万</span></h2>
+                            <ul>
+                                <li>截至北京时间</li>
+                                <li>票房预测：<span></span>万</li>
+                            </ul>
+                        </div>
+                        <div class="sales-data">
+                            <h2>28.73 <span>万</span></h2>
+                            <ul>
+                                <li>人次</li>
+                            </ul>
+                        </div>
+                        <div class="sales-data">
+                            <h2>28.73 <span>万</span></h2>
+                            <ul>
+                                <li>场次</li>
+                            </ul>
+                        </div>
+                        <div class="sales-data">
+                            <h2>28.73 <span>万</span></h2>
+                            <ul>
+                                <li>平均票价</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="movieModel">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">汽车销售</div>
+            <div id="salesModel" >
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="qidian">
+                <div class="box">
+                    <div class="title">起点中文网</div>
+                    <div class="qidian-content">
+                        <div id="qidianModel">
+                            
+                        </div>
+                        <div id = "qidianUpdataTime">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel">
+                <div class="box">
+                    <div class="title">出行</div>
+                    <div id="travelModel">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="/javascripts/china.js"></script>
+
+    <script>
+    var qidian = JSON.parse('<%- JSON.stringify(qidians.QiDianList)%>');
+                        console.log(qidian)
+                        </script>
+                        <script src="/javascripts/main.js"></script>
+
+</body>
+
+</html>

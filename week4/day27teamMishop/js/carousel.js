@@ -14,7 +14,9 @@ var pic = (function () {
             if (account == picNum)
                 account = 0;
             account++;
-            $(".carousel .first .img").css("background-image", "url('../img/carouselPic/" + account + ".jpg')");
+            // eslint-disable-next-line no-undef
+            let img = require("../img/carouselPic/" + account + ".jpg");
+            $(".carousel .first .img").css("background-image", "url(" + img + ")");
             var timer = setTimeout(function () {
                 isChange = false;
                 timer = window.clearTimeout(timer);
@@ -30,7 +32,9 @@ var pic = (function () {
             if (account == 1)
                 account += picNum;
             account--;
-            $(".carousel .first .img").css("background-image", "url('../img/carouselPic/" + account + ".jpg')");
+            // eslint-disable-next-line no-undef
+            let img = require("../img/carouselPic/" + account + ".jpg");
+            $(".carousel .first .img").css("background-image", "url(" + img + ")");
             var timer = setTimeout(function () {
                 isChange = false;
                 timer = window.clearTimeout(timer);
@@ -41,7 +45,9 @@ var pic = (function () {
     //点击小圆点切换指定图片
     function accountPic(count) {
         account = count;
-        $(".carousel .first .img").css("background-image", "url('../img/carouselPic/" + account + ".jpg')");
+        // eslint-disable-next-line no-undef
+        let img = require("../img/carouselPic/" + account + ".jpg");
+        $(".carousel .first .img").css("background-image", "url(" + img + ")");
         changeCircle();
     }
     //小圆点相应变换
